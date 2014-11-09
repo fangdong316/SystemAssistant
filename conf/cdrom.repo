@@ -1,0 +1,27 @@
+[Base]
+name=Red Hat Enterprise Linux $releasever - $basearch - BASE
+baseurl=file:///mnt/Server
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[Cluster]
+name=Red Hat Enterprise Linux $releasever Beta - $basearch - Cluster
+baseurl=file:///mnt/Cluster
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta,file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[ClusterStorage]
+name=Red Hat Enterprise Linux $releasever Beta - $basearch - ClusterStorage
+baseurl=file:///mnt/ClusterStorage
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta,file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[VT]
+name=Red Hat Enterprise Linux $releasever Beta - $basearch - VT
+baseurl=file:///mnt/VT
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta,file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
